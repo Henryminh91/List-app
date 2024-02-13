@@ -1,6 +1,4 @@
-
-
-import React from "react";
+import PropTypes from "prop-types";
 
 const BeerDetails = ({ beer }) => {
   return (
@@ -10,6 +8,13 @@ const BeerDetails = ({ beer }) => {
       <p>{beer.description}</p>
     </div>
   );
+};
+BeerDetails.propTypes = {
+  beer: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    abv: PropTypes.number.isRequired,
+    description: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default BeerDetails;

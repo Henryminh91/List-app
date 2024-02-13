@@ -1,7 +1,6 @@
 
-import React from 'react';
 import Layout from './components/Layout';
-import BeerDetails from './components/BeerDetails';
+import BeerDetails from './components/Beerdetails.jsx';
 import beersData from './Beers';
 
 const App = () => {
