@@ -23,7 +23,7 @@ const beers = [
     description:
       "Klar dyp gyllen i utseende. Sødmefylt duft av moden frukt og karamel.",
   },
-  // Add more beer objects as needed
+ 
 ];
 
 export default beers;
