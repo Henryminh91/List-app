@@ -23,7 +23,11 @@ const beers = [
     description:
       "Klar dyp gyllen i utseende. Sødmefylt duft av moden frukt og karamel.",
   },
- 
+  {
+    name: "Ringnes Extra Gold",
+    abv: 5.3,
+    description: "Klar dyp gyllen. Dufter av moden frukt, søtt brød og vørter.",
+  },
 ];
 
 export default beers;
