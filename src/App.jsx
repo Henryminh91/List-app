@@ -1,14 +1,14 @@
-
-import Layout from './components/Layout';
-import BeerDetails from './components/Beerdetails.jsx';
-import beersData from './Beers';
+import Layout from "./components/Layout";
+import BeerDetails from "./components/Beerdetails.jsx";
+import beersData from "./Beers";
 
 const App = () => {
   return (
     <div>
       <h1>Beer App</h1>
-      {beersData.map((beer, index) => (
-        <Layout key={index}>
+      {beersData.map((beer) => (
+        <Layout key={beer.id}>
+          <h3>Top {beer.id}</h3>
           <BeerDetails beer={beer} />
         </Layout>
       ))}
@@ -17,4 +17,3 @@ const App = () => {
 };
 
 export default App;
-
